@@ -18,29 +18,31 @@
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="./img/tim-pamplin-logo.png" alt="Logo for tim pamplin .com"></a>
+        <a href="./index.html"><img src="./img/tim-pamplin-logo.png" alt="Logo for tim pamplin .com" id="tim-pamplin-logo"></a>
         <!--Site Navigation-->
         <nav>
             <ul role="menubar" class="navigation-list">
                 <li role="presentation" >
-                    <a  href="./index.html" role="menuitem" class="navigation-list__item" ><button class="navigation-list__item--active">Home</button></a>
+                    <a  href="./index.html" role="menuitem" ><button class="navigation-list__item--active navigation-list__item" id="nav__home">Home</button></a>
                 </li>
                 <li role="presentation">
-                    <a  href="./about.html" role="menuitem" class="navigation-list__item"><button>About Me</button></a>
+                    <a  href="./about.html" role="menuitem"><button class="navigation-list__item" id="nav__about">About Me</button></a>
                 </li>
                 <li role="presentation">
-                    <a  href="./contact.html" role="menuitem" class="navigation-list__item"><button>Contact</button></a>
+                    <a  href="./contact.html" role="menuitem"><button class="navigation-list__item" id="nav__contact">Contact</button></a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Welcome to timpamplin.com</h1>
         <!--Picture of me-->
         <img class="portrait" src="./img/tim-pamplin-portrait.jpg" alt="A photograph of me." />
-        <p>I'm Tim Pamplin and I'm the web developer you need for your next project.</p>
-        <!--Add url to projects page-->
-        <a href="#">Click here to view some previous projects I've worked on.</a>
+        <div class="welcome-text">
+            <h1>Welcome to timpamplin.com</h1>
+            <p>I'm Tim Pamplin and I'm the web developer you need for your next project.</p>
+            <!--Add url to projects page-->
+            <a href="#">Click here to view some previous projects I've worked on.</a>
+        </div>
     </main>
     <footer>
         <!--Social Media Links-->

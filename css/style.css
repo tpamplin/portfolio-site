@@ -11,26 +11,23 @@ Link hover color: #600091
 
 */
 
+*{
+    box-sizing:border-box;
 
+}
 
 body{
     font-family: "Amethysta", system-ui;
     font-weight: 400;
     font-style: normal;
     min-height:94vh;
-    display:flex;
-    flex-direction:column;
     background-color:#b5e5f5;
     border: 8px solid #0d0058;
     margin:auto;
 }
 
 header{
-    padding:20px;
-    text-align:center;
-    position:relative;
-    height:70px;
-    border: 4px solid #0d0058;
+    background-color:#0d0058;
 }
 
 main{
@@ -40,11 +37,7 @@ main{
 
 }
 
-footer{
-    background-color: #fff;
-    text-align:center;
-    margin-top:auto;
-}
+
 
 p {
     color:#1b0029;
@@ -112,8 +105,22 @@ textarea{
     width:400px;
     height:150px
 }
-nav {
-    display:inline;
+
+.page-footer{
+    background-color: #fff;
+    clear:both;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    position:absolute;
+    width:100vw;
+    bottom:0;
+}
+
+.navigation-bar {
+    display:flex;
+    flex-direction:row;
+    float:right;
 }
 
 .button__message {
@@ -121,15 +128,13 @@ nav {
 }
 
 .navigation-list__item{
-    position: absolute;
-    top: 30px;
+    margin:5px;
 }
 
 .navigation-list{
     list-style-type: none;
     padding-left:0;
     text-align:center;
-    display:inline;
 }
 
 .navigation-list__item--active{
@@ -147,13 +152,17 @@ nav {
 .image-link{
     text-decoration:none;
 }
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+    
 
-.portrait {
-    width:450px;
-    height:450px;
-    position:absolute;
-    right:52%;
-    top:50%;
+}
+.profile__portrait {
+    width:250px;
+    float:left;
+    margin-right:40px;
+    border-radius:50%;
 }
 
 .xtra-line-space {
@@ -161,12 +170,7 @@ nav {
 }
 
 .welcome-text{
-    position:inherit;
-    text-align: left;
-    left: 52%;
-    top: 50%;
-    transform:translate(0, 200%);
-
+    text-align: center;
 }
     
 #tim-pamplin-logo {
@@ -174,19 +178,3 @@ nav {
     left: 20px;
 
 }
-
-#nav__home {
-    right: 10px;
-
-}
-
-#nav__about {
-    right:100px;
-
-}
-
-#nav__contact {
-    right:225px;
-
-}
-

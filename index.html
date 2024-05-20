@@ -17,10 +17,10 @@
     <title>Home -- timpamplin.com</title>
 </head>
 <body>
-    <header>
-        <a href="./index.html"><img src="./img/tim-pamplin-logo.png" alt="Logo for tim pamplin .com" id="tim-pamplin-logo"></a>
+    <header class="page-header">
+        <a href="./index.html"><img src="./img/tim-pamplin-logo.png" alt="Logo for tim pamplin .com" id="tim-pamplin-logo" class="page-header__item"></a>
         <!--Site Navigation-->
-        <nav>
+        <nav class="navigation-bar page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation" >
                     <a  href="./index.html" role="menuitem" ><button class="navigation-list__item--active navigation-list__item" id="nav__home">Home</button></a>
@@ -36,29 +36,33 @@
     </header>
     <main>
         <!--Picture of me-->
-        <img class="portrait" src="./img/tim-pamplin-portrait.jpg" alt="A photograph of me." />
-        <div class="welcome-text">
-            <h1>Welcome to timpamplin.com</h1>
-            <p>I'm Tim Pamplin and I'm the web developer you need for your next project.</p>
-            <!--Add url to projects page-->
-            <a href="#">Click here to view some previous projects I've worked on.</a>
+        <div class="profile">
+            <img class="profile__portrait" src="./img/tim-pamplin-portrait.jpg" alt="A photograph of me." />
+            <div class="welcome-text">
+                <h1>Welcome to timpamplin.com</h1>
+                <p>I'm Tim Pamplin and I'm the web developer you need for your next project.</p>
+                <!--Add url to projects page-->
+                <a href="#">Click here to view some previous projects I've worked on.</a>
+            </div>
         </div>
     </main>
-    <footer>
+    <footer class="page-footer">
         <!--Social Media Links-->
         <p>Follow me on:</p>
-        <a href="https://github.com/tpamplin" target="_blank" class="image-link">
-            <img src="./img/github.svg" alt="go to my Github" style="transform:translateY(2px)"/>
-        </a>
-        <a href="https://www.instagram.com/pamplintimothy?igsh=eGd4OXNoNXJ5ejk=" target="_blank" class="image-link">
-            <img src="./img/Instagram.svg" alt="go to my Instagram"/>
-        </a>
-        <a href="https://www.tiktok.com/@gabirdbuddies" target="_blank" class="image-link">
-            <img src="./img/tiktok.svg" alt="go to my Tiktok" style="transform:translateY(3px)"/>
-        </a>
-        <a href="https://www.youtube.com/channel/UCwWDs3PgzepmmQEWdkrNJuQ/videos" target="_blank" class="image-link">
-            <img src="./img/youtube.svg" alt="go to my youtube"/>
-        </a>
+            <div class="social-media">
+            <a href="https://github.com/tpamplin" target="_blank" class="image-link">
+                <img src="./img/github.svg" alt="go to my Github" style="transform:translateY(2px)"/>
+            </a>
+            <a href="https://www.instagram.com/pamplintimothy?igsh=eGd4OXNoNXJ5ejk=" target="_blank" class="image-link">
+                <img src="./img/Instagram.svg" alt="go to my Instagram"/>
+            </a>
+            <a href="https://www.tiktok.com/@gabirdbuddies" target="_blank" class="image-link">
+                <img src="./img/tiktok.svg" alt="go to my Tiktok" style="transform:translateY(3px)"/>
+            </a>
+            <a href="https://www.youtube.com/channel/UCwWDs3PgzepmmQEWdkrNJuQ/videos" target="_blank" class="image-link">
+                <img src="./img/youtube.svg" alt="go to my youtube"/>
+            </a>
+        </div>
     </footer>
     <script src="./js/tota11y.min.js"></script>
 </body>

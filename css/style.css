@@ -19,12 +19,12 @@ body{
     font-family: "Amethysta", system-ui;
     font-weight: 400;
     font-style: normal;
-    min-height:94vh;
     display:flex;
     flex-direction:column;
     background-color:#a3b18a;
     border: 8px solid #344e41;
     margin:auto;
+    min-height:94vh;
 }
 
 
@@ -65,8 +65,9 @@ button:hover, button:focus{
     color:#600091
 }
 
-h1{
+.page-title{
     color:#1b0029;
+    text-align:center;
 }
 h2{
     color:#1b0029;
@@ -155,6 +156,7 @@ textarea{
     max-width:700px;
     margin:0 auto;
     text-align: left;
+    position:relative;
 }
 .xtra-line-space {
     line-height:1.6;
@@ -173,6 +175,8 @@ textarea{
     display: flex;
     flex-direction:column;
     text-align:center;
+
+    border-top: 10px solid #344e41;
 
 }
 
@@ -193,5 +197,43 @@ textarea{
 .page-header .page-header__item:last-child {
     flex-grow: 1;
     text-align: right;
+
+}
+
+/*grid fallback*/
+.grid__item{
+    display:inline-block;
+    width:33%;
+
+}
+@supports (display:grid){
+    .grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 10px;
+        text-align:center;
+
+    }
+
+    .grid__item{
+        background-color: #dad7cd;
+        width: auto;
+        min-height: auto;
+        margin:0;
+
+    }
+
+    .grid__item:last-child {
+        grid-column: 3/3;
+        grid-row: 1/3;
+    }
+}
+.page-main {
+    margin-bottom:100px;
+}
+
+.profile__text {
+    text-align:center;
 
 }

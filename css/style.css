@@ -2,18 +2,17 @@
 Colors!
 White: #fff
 Black: #000
-Background light blue: #b5e5f5
-Accent light blue: #d1faff
-Accent dark blue: #0d0058
+Background light green: #b5e5f5
+Accent light green: #dad7cd
 Text Color -- Dark purple accent: #1b0029
 Link hover color: #600091
+Accent dark green: #344e41
 
 
 */
 
 *{
-    box-sizing:border-box;
-
+    box-sizing: border-box;
 }
 
 body{
@@ -21,22 +20,20 @@ body{
     font-weight: 400;
     font-style: normal;
     min-height:94vh;
-    background-color:#b5e5f5;
-    border: 8px solid #0d0058;
+    display:flex;
+    flex-direction:column;
+    background-color:#a3b18a;
+    border: 8px solid #344e41;
     margin:auto;
 }
 
-header{
-    background-color:#0d0058;
-}
 
 main{
     margin:10px;
+    margin-bottom:100px;
     text-align:center;
-    position:relative;
 
 }
-
 
 
 p {
@@ -47,14 +44,15 @@ p {
 button {
     border:none;
     font-family:inherit;
-    background-color:#d1faff;
+    background-color:#dad7cd;
     color:#1b0029;
     text-decoration:none;
     padding:10px;
+    margin:5px;
 
     border-radius:3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
     border-top: 2px solid rgba(255, 255, 255, 0.4);
     border-left: 2px solid rgba(255, 255, 255, 0.4);
 
@@ -67,7 +65,17 @@ button:hover, button:focus{
     color:#600091
 }
 
+h1{
+    color:#1b0029;
+}
+h2{
+    color:#1b0029;
+}
+
 a {
+    color:#1b0029;
+}
+label {
     color:#1b0029;
 }
 
@@ -78,7 +86,6 @@ a:hover, a:focus{
 }
 
 a:active {
-    /* removes underline when hovering*/
     text-decoration:underline;
     color:#09ff00;
 }
@@ -86,19 +93,19 @@ a:active {
 table {
     text-align:center;
     color:#1b0029;
-    border:2px solid #000;
-    background-color:#d1faff;
+    border:2px solid #1b0029;
+    background-color:#dad7cd;
     margin-left:auto;
     margin-right:auto;
 }
 
 th {
-    border:2px solid #000;
+    border:2px solid #1b0029;
     padding:0px 5px;
 }
 
 td {
-    border:1px solid #000;
+    border:1px solid #1b0029;
     padding:0px 5px;
 }
 textarea{
@@ -106,35 +113,19 @@ textarea{
     height:150px
 }
 
-.page-footer{
-    background-color: #fff;
-    clear:both;
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    position:absolute;
-    width:100vw;
-    bottom:0;
-}
-
-.navigation-bar {
-    display:flex;
-    flex-direction:row;
-    float:right;
-}
-
-.button__message {
-    background-color:#57fcfc;
-}
-
-.navigation-list__item{
-    margin:5px;
+.site-logo{
+    display:inline-block;
+    padding:10px;
 }
 
 .navigation-list{
     list-style-type: none;
     padding-left:0;
-    text-align:center;
+}
+
+.navigation-list__item {
+    display:inline-block;
+    margin-left:15px;
 }
 
 .navigation-list__item--active{
@@ -152,29 +143,55 @@ textarea{
 .image-link{
     text-decoration:none;
 }
-.profile {
-    max-width: 700px;
-    margin: 0 auto;
-    
 
-}
 .profile__portrait {
     width:250px;
+    height:auto;
     float:left;
-    margin-right:40px;
-    border-radius:50%;
+    margin:10px;
+    border-radius:25%;
 }
-
+.profile{
+    max-width:700px;
+    margin:0 auto;
+    text-align: left;
+}
 .xtra-line-space {
     line-height:1.6;
 }
 
-.welcome-text{
-    text-align: center;
-}
+.page-footer {
+    position:fixed;
+    height:100px;
+    width:100%;
+    bottom:0;
+    left:0;
+
+    background-color: #dad7cd;
     
-#tim-pamplin-logo {
-    position:absolute;
-    left: 20px;
+    clear: both;
+    display: flex;
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.page-header {
+    display:flex;
+    width:100%;
+    padding:0px;
+    margin:0;
+    background-color: #344e41;
+
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+
+}
+
+.page-header .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
 
 }

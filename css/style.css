@@ -127,7 +127,7 @@ table {
     text-align:center;
     color:var(--accent-purple);
     border:2px solid var(--accent-purple);
-    background-color:var(--accent-light-green);
+    background-color: var(--accent-light-green);
     margin-left:auto;
     margin-right:auto;
 }
@@ -295,16 +295,6 @@ textarea{
     to{
         transform:translate(600px, 25px);
     }
-}
-
-.sun{
-    animation: 60s color-change infinite alternate linear;
-}
-.cloud-front {
-    animation: 60s cloud-move__1 infinite alternate ease-in-out;
-}
-.cloud-back {
-    animation: 60s cloud-move__2 infinite alternate ease-in-out;
 }
 
 /*grid fallback*/

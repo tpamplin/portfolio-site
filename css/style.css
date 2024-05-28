@@ -51,6 +51,10 @@ p {
     color:var(--accent-purple);
 }
 
+.nav-link{
+    text-decoration:none;
+}
+
 button,
 .button{
     border:none;
@@ -69,7 +73,7 @@ button,
     border-left: 2px solid rgba(255, 255, 255, 0.4);
 
     font-size: 20px;
-    transition: opacity .8s , color .8s 
+    transition: opacity .8s , color .8s;
 }
 
 button:hover,

@@ -127,7 +127,7 @@ table {
     text-align:center;
     color:var(--accent-purple);
     border:2px solid var(--accent-purple);
-    background-color:var(--background-color);
+    background-color:var(--accent-light-green);
     margin-left:auto;
     margin-right:auto;
 }

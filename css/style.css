@@ -250,7 +250,7 @@ textarea{
 
 
 
-.berlin-illustration{
+.illustration{
     width:60%;
 }
 
@@ -365,7 +365,7 @@ textarea{
 }
 
 @media all and (max-width:1250px){
-    .berlin-illustration{
+    .illustration{
         width:100%;
 }
 

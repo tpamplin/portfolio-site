@@ -480,7 +480,8 @@ textarea{
         grid-gap: 30px;
         padding: 10px;
         text-align:center;
-        max-width:1250px;
+        max-width:1750px;
+        margin:0 auto;
     }
     .about-grid__item{
         width:auto;

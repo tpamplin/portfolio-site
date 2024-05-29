@@ -213,9 +213,11 @@ td {
     border:1px solid #1b0029;
     padding:0px 5px;
 }
+
 textarea{
     width:400px;
-    height:150px
+    height:150px;
+    max-width: 90%;
 }
 
 .site-logo{

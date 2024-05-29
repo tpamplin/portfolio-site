@@ -337,7 +337,7 @@ textarea{
 
 }
 
-.page-header .page-header__item:last-child {
+.page-header__item:last-child {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -546,6 +546,22 @@ textarea{
         grid-row: auto / auto;
     }
 
+    .page-header{
+        display:block;
+        text-align:center;
+    }
+
+    .page-header__item{
+        margin: auto auto;
+        text-align:center;
+    }
+    .page-header__item:last-child{
+        text-align:center;
+    }
+    .navigation-list__item{
+        margin: auto auto;
+    }
+
 }
 
 @media all and (max-width: 500px){
@@ -553,7 +569,15 @@ textarea{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
+    .button{
+        font-size:12px
+    }
+}
 
+@media all and (max-width: 350px){
+    .button{
+        font-size:10px;
+    }    
 }
 
 @media all and (min-width: 500px) and (max-width: 750px){

@@ -74,6 +74,8 @@ button,
 
     font-size: 20px;
     transition: opacity .8s , color .8s;
+    display:inline-block;
+
 }
 
 button:hover,

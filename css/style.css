@@ -281,6 +281,11 @@ textarea{
     border-radius:5%;
 }
 
+.project-screenshot{
+    width: 98%;
+    height: auto;
+}
+
 @keyframes color-change{
     from{
         fill: #edc655;

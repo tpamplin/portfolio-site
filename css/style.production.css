@@ -372,6 +372,11 @@ textarea{
     border-radius:5%;
 }
 
+.project-screenshot{
+    width: 98%;
+    height: auto;
+}
+
 @-webkit-keyframes color-change{
     from{
         fill: #edc655;
@@ -590,10 +595,4 @@ textarea{
         -ms-grid-columns: 1fr 10px 1fr;
         grid-template-columns: 1fr 1fr;
     }
-}
-
-
-.project-screenshot{
-    width: 98%;
-    height: auto;
 }

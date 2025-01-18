@@ -591,3 +591,9 @@ textarea{
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+.project-screenshot{
+    width: 98%;
+    height: auto;
+}

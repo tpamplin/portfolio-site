@@ -451,3 +451,8 @@ textarea{
         grid-template-columns: 1fr 1fr;
     }
 }
+
+.tech-list {
+    padding: 0;
+    list-style-type: none;
+}

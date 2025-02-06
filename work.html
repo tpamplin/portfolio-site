@@ -40,32 +40,67 @@
         <section class="page-main">
             <h1 class="page-title">Projects</h1>
             <div class="grid">
+
                 <div class="grid__item">
                     <h2 class="color-black">Portfolio website</h2>
                     <img class="project-screenshot" src="/img/portfolio-shot.png" alt="A screenshot of the portfolio site homepage" />
                     <p class="color-black">
                         You are currently experiencing this project! written in HTML and CSS.
                     </p>
-                    <a href="./index.html" class="color-black">Back to homepage</a>
+                    <h3>Technologies:</h3>
+                    <ul class="tech-list">
+                        <li class="tech-list">HTML</li>
+                        <li class="tech-list">CSS</li>
+                    </ul>
+                    <a href="./index.html" class="color-black">Back to homepage</a><br>
+                    <a class="color-black" target="_blank" href="https://github.com/tpamplin/portfolio-site">See project on GitHub</a>
                 </div>
                 
                 <div class="grid__item">
-                    <h2 class="color-black">JQuery To-Do List</h2>
-                    <img class="project-screenshot" src="/img/todo-shot.png" alt="A screenshot of the todo list app:" />
+                    <h2 class="color-black">JavaScript Pokedex</h2>
+                    <img class="project-screenshot" src="/img/pokedex-shot.png" alt="A screenshot of the pokedex app:" />
                     <p class="color-black">
-                        A lightweight to-do list app written in JQuery.
+                        A pokedex app created with JavaScript that shows you a list of pokemon, and allows you to to click the pokemon to view more information about it.
                     </p>
-                    <a class="color-black" target="_blank" href="./projects/jquery-to-do-list/index.html">Open Project</a>
+                    <h3>Technologies:</h3>
+                    <ul class="tech-list">
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a class="color-black" target="_blank" href="https://tpamplin.github.io/js-pokedex/">Open Project</a><br>
+                    <a class="color-black" target="_blank" href="https://github.com/tpamplin/js-pokedex">See project on GitHub</a>
                 </div>
                 
                 <div class="grid__item">
-                    <h2 class="color-black">Myflix App</h2>
+                    <h2 class="color-black">JavaScript Movie API</h2>
+                    <p class="color-black">
+                        An API built with Node.JS and express, with MongoDB for the database. Will serve up info about movies, directors and genres. As well as processing login, authentication and user creation/deletion requests.
+                    </p>
+                    <p>No screenshot here, this project isn't much to look at.</p>
+                    <h3>Technologies:</h3>
+                    <ul class="tech-list">
+                        <li>JavaScript</li>
+                        <li>Node.JS</li>
+                        <li>Express</li>
+                    </ul>
+                    <a class="color-black" href="https://github.com/tpamplin/chat">See project on GitHub</a>
+                </div>
+
+                <div class="grid__item">
+                    <h2 class="color-black">Myflix React App</h2>
                     <img class="project-screenshot" src="/img/myflix-shot.png" alt="A screenshot of the myflix app." />
                     <p class="color-black">
                         Lightweight React app that will allow you to login to view a list of movies, which you can add to a list of your favorites.
                     </p>
+                    <h3>Technologies:</h3>
+                    <ul class="tech-list">
+                        <li>React</li>
+                        <li>React-Bootstrap</li>
+                        <li>Parcel</li>
+                    </ul>
                     <a class="color-black" target="_blank" href="https://pamplin-myflix.netlify.app/">View This Project</a><br>
-                    <a class="color-black" target="_blank" href="">See project on GitHub</a>
+                    <a class="color-black" target="_blank" href="https://github.com/tpamplin/MyFlix-Client">See project on GitHub</a>
 
                 </div>
                 
@@ -73,18 +108,48 @@
                     <h2 class="color-black">Meet App</h2>
                     <img class="project-screenshot" src="/img/meet-shot.png" alt="A screenshot of the meet app." />
                     <p class="color-black">
-                        Shows you different events, you can sort by city and specify the number of events you want to see. Works offline and is downloadable as a proggressive web application. will also show you charts to plot the data currently shown on screen.
-                    </p>
+                        Shows you different events, you can sort by city and specify the number of events you want to see. Works offline and is downloadable as a proggressive web application. Will also show you charts to plot the data currently shown on screen.
+                    </p>                    
+                    <h3>Technologies:</h3>
+                    <ul class="tech-list">
+                        <li>React</li>
+                        <li>Google Calendar Api</li>
+                        <li>Vite</li>
+                    </ul>
                     <a class="color-black" target="_blank" href="https://meet-app-jet.vercel.app/">View this project</a><br>
                     <a class="color-black" target="_blank" href="https://github.com/tpamplin/meet-app">See project on GitHub</a>
                 </div>
 
                 <div class="grid__item">
-                    <h2 class="color-black">Coming soon!</h2>
+                    <h2 class="color-black">Chat App</h2>
+                    <img class="project-screenshot" src="/img/chat-shot.png" alt="A screenshot of the chat app." />
                     <p class="color-black">
-                        Lots of future projects coming soon!
+                        A chat app created with React Native and Gifted chat, allows the user to anonymously authenticate and then send messages to other users connected to the same server. You can also send images or your location. 
                     </p>
-                    <a class="color-black" href="#">See project on GitHub</a>
+                    <h3>Technologies:</h3>
+                    <ul class="tech-list">
+                        <li>React</li>
+                        <li>GiftedChat</li>
+                        <li>Expo</li>
+                    </ul>
+                    <p>To view this project you have to download it, and follow the instructions in the README to run it on your mobile device.</p><br>
+                    <a class="color-black" href="https://github.com/tpamplin/chat">See project on GitHub</a>
+                </div>
+
+                <div class="grid__item">
+                    <h2 class="color-black">MyFlix Angular Client</h2>
+                    <img class="project-screenshot" src="/img/myflix-angular-shot.png" alt="A screenshot of the Angular MyFlix app." />
+                    <p class="color-black">
+                        Very similar to the MyFlix React Client (using the same api) but written in Angular, and using Angular Material for the UI components.
+                    </p>
+                    <h3>Technologies:</h3>
+                    <ul class="tech-list">
+                        <li>TypeScript</li>
+                        <li>Angular</li>
+                        <li>Angular Material</li>
+                    </ul>
+                    <a class="color-black" target="_blank" href="https://tpamplin.github.io/MyFlix-Angular-client/welcome">View this project</a><br>
+                    <a class="color-black" target="_blank" href="https://github.com/tpamplin/MyFlix-Angular-client">See project on GitHub</a>
                 </div>
 
                 <div class="grid__item">
@@ -102,6 +167,7 @@
                     </p>
                     <a href="./contact.html" class="color-black">Contact me!</a>
                 </div>
+                
             </div>
         </section>
         <footer class="page-footer">
